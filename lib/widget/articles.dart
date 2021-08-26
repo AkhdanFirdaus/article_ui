@@ -19,8 +19,7 @@ class New extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  // Navigator.of(context).pushNamed('/homedua');
-                  Navigator.pushNamed(context, '/homedua');
+                  Navigator.pushNamed(context, '/articles');
                 },
                 child: Row(
                   children: [
@@ -34,32 +33,37 @@ class New extends StatelessWidget {
           for (int i = 0; i < 3; i++)
             Padding(
               padding: const EdgeInsets.only(bottom: 12),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  SizedBox(
-                    width: 80,
-                    child: AspectRatio(
-                      aspectRatio: 1,
-                      child: Image(
-                        image: NetworkImage('https://picsum.photos/80'),
-                        fit: BoxFit.cover,
+              child: InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, '/detail');
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      width: 80,
+                      child: AspectRatio(
+                        aspectRatio: 1,
+                        child: Image(
+                          image: NetworkImage('https://picsum.photos/80'),
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
-                  ),
-                  SizedBox(width: 12),
-                  Flexible(
-                    child: Text(
-                      "Mie dipercaya dapat memicu terjadinya Magh",
+                    SizedBox(width: 12),
+                    Flexible(
+                      child: Text(
+                        "Mie dipercaya dapat memicu terjadinya Magh",
+                      ),
                     ),
-                  ),
-                  TextButton.icon(
-                    onPressed: () {},
-                    icon: Icon(Icons.favorite),
-                    label: Text("270k"),
-                  ),
-                ],
+                    TextButton.icon(
+                      onPressed: () {},
+                      icon: Icon(Icons.favorite),
+                      label: Text("270k"),
+                    ),
+                  ],
+                ),
               ),
             ),
         ],

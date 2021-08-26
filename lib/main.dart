@@ -1,3 +1,4 @@
+import 'package:article_ui/article_list.dart';
 import 'package:article_ui/detail.dart';
 import 'package:article_ui/home.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/': (context) => HomePage(),
+        '/articles': (context) => ArticleListPage(),
         '/detail': (context) => DetailPage(),
       },
     );
