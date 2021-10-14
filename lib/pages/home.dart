@@ -1,10 +1,10 @@
 import 'package:article_ui/widget/header.dart';
 import 'package:flutter/material.dart';
 
-import 'widget/articles.dart';
-import 'widget/categories.dart';
-import 'widget/popular_articles.dart';
-import 'widget/search.dart';
+import '../widget/articles.dart';
+import '../widget/categories.dart';
+import '../widget/popular_articles.dart';
+import '../widget/search.dart';
 
 class HomePage extends StatelessWidget {
   final _drawerKey = GlobalKey<ScaffoldState>();

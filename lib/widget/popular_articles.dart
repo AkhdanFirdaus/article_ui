@@ -41,6 +41,7 @@ class PopularWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
+        // push ke halaman detail
         Navigator.pushNamed(context, '/detail');
       },
       child: SizedBox(

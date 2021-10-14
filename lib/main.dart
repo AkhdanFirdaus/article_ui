@@ -1,6 +1,6 @@
-import 'package:article_ui/article_list.dart';
-import 'package:article_ui/detail.dart';
-import 'package:article_ui/home.dart';
+import 'package:article_ui/pages/article_list.dart';
+import 'package:article_ui/pages/detail.dart';
+import 'package:article_ui/pages/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
