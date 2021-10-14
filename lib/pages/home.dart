@@ -38,11 +38,11 @@ class HomePage extends StatelessWidget {
       body: SafeArea(
         child: ListView(
           children: [
-            Header(drawerKey: _drawerKey),
-            Search(),
-            Category(),
-            Popular(),
-            New(),
+            HeaderWidget(drawerKey: _drawerKey),
+            SearchWidget(),
+            CategoriesWidget(),
+            PopularWidget(),
+            NewArticleWidget(),
           ],
         ),
       ),
