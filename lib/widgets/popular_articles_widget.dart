@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Popular extends StatelessWidget {
+class PopularWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -22,7 +22,7 @@ class Popular extends StatelessWidget {
             child: Wrap(
               spacing: 26,
               children: [
-                for (int i = 0; i < 3; i++) PopularWidget(),
+                for (int i = 0; i < 3; i++) PopularItemWidget(),
               ],
             ),
           ),
@@ -32,8 +32,8 @@ class Popular extends StatelessWidget {
   }
 }
 
-class PopularWidget extends StatelessWidget {
-  const PopularWidget({
+class PopularItemWidget extends StatelessWidget {
+  const PopularItemWidget({
     Key? key,
   }) : super(key: key);
 

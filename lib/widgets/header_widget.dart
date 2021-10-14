@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Header extends StatelessWidget {
-  Header({required this.drawerKey});
+class HeaderWidget extends StatelessWidget {
+  HeaderWidget({required this.drawerKey});
   final GlobalKey<ScaffoldState> drawerKey;
 
   @override
