@@ -19,4 +19,9 @@ class Post {
       body: json['body'],
     );
   }
+
+  // Buat metode konversi ke json
+  // Example:
+  // Map<String, dynamic> toJson() => { 'userId': this.userId }
+
 }

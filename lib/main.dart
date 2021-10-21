@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => HomePage(),
         '/articles': (context) => ArticleListPage(),
         '/detail': (context) => DetailPage(),
+        // Tambahkan widget ArticleCreate yang terdapat pada file article_create.dart
       },
     );
   }
